@@ -40,8 +40,8 @@ describe('List', () => {
         const header = screen.queryByText('login');
         const subHeader = screen.queryByText('organizations_url');
 
-        expect(avatar).toHaveAttribute('src', 'avatar_url');
         expect(noItemsText).not.toBeInTheDocument();
+        expect(avatar).toHaveAttribute('src', 'avatar_url');
         expect(header).toBeInTheDocument();
         expect(subHeader).toBeInTheDocument();
     });
